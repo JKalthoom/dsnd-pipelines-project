@@ -10,13 +10,11 @@ This project aims to build a predictive model using machine learning and natural
 1. Clone the Repository: <br>
 git clone https://github.com/JKalthoom/dsnd-pipelines-project/ <br>
 2. Set Up a Virtual Environment: <br>
-python -m venv venv <br>
-source venv/bin/activate <br>
 3. Install Dependencies: <br>
 pip install -r requirements.txt
 4. Download and Prepare the Dataset: <br>
 Ensure that the dataset is available in the data/ folder.
-5. Run the Starter.ipynb file
+5. Run the code from the starter.ipynb file
 
 
 ### Dependencies
