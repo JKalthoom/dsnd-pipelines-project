@@ -1,6 +1,5 @@
 # StyleSense: Fashion Forward Forecasting
 
-Project Description
 
 StyleSense is a rapidly growing online women's clothing retailer known for its trendy and affordable fashion. With the influx of new customers, a backlog of product reviews with missing data has emerged. Customers often provide detailed textual feedback but do not always indicate whether they recommend the product.
 
@@ -42,11 +41,33 @@ matplotlib & seaborn - Data visualization.
 
 ### Testing
 
+The model's performance was evaluated using accuracy, precision, recall, and F1-score. Below are the classification reports from the tests: <br>
 
+**Note**: Due to memory limitations on my PC, I used HalvingRandomSearchCV instead of traditional hyperparameter tuning methods. While this helped optimize the model efficiently within available resources, the accuracy did not improve significantly. <br>
+
+Test Results 1 (Before fine-tuning): <br>
+![](images/1.PNG)
+
+Test Results 2 (After fine-tuning): <br>
+![](images/2.PNG)
+
+### Breakdown of Tests
+
+- Precision: Measures how many predicted positive labels were actually correct.
+- Recall: Measures how many actual positive labels were correctly predicted.
+- F1-score: Harmonic mean of precision and recall, providing a balance between the two.
+- Support: Number of occurrences of each class in the test set.
+- Accuracy: Overall correct predictions divided by total samples.
+
+The results indicate strong performance for class 1 (recommendation), while class 0 (no recommendation) has lower recall. This suggests the model is better at identifying recommendations but may miss some non-recommendations.
 
 ## Project Instructions
 
-This section should contain all the student deliverables for this project.
+The student deliverables for this project include: <br>
+- Data preprocessing (cleaning and feature engineering)
+- Exploratory data analysis (EDA)
+- Model training, evaluation, and hyperparameter tuning
+- Model deployment (if applicable)
 
 ## Built With
 
